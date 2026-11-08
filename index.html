@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Daily Dashboard - clock, weather, tasks, and more">
+    <title>Daily Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Bebas+Neue&family=Black+Ops+One&family=Doppio+One&family=Lalezar&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" href="images/download.jpg">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Daily Dashboard</h1>
+        <nav>
+            <a href="#clock-section">Clock</a>
+            <a href="#tasks-section">Tasks</a>
+            <a href="#weather-section">Weather</a>
+            <a href="#video-section">Video</a>
+        </nav>
+        <button id="theme-toggle"> Dark Mode</button>
+    </header>
+
+    <main>
+
+        <section id="clock-section">
+            <h2> Clock & Date</h2>
+            <div class="clock-box">
+                <p id="clock">--:--:--</p>
+                <p id="date">Loading date...</p>
+            </div>
+        </section>
+
+        <section id="countdown-section">
+            <h2> Countdown to Deadline</h2>
+            <div class="countdown-box">
+                <label for="deadline-input">Set a deadline:</label>
+                <input type="datetime-local" id="deadline-input">
+                <button id="set-deadline">Set Deadline</button>
+                <p id="countdown">No deadline set.</p>
+            </div>
+        </section>
+
+        <section id="tasks-section">
+            <h2>To-Do List</h2>
+            <div class="task-input">
+                <input type="text" id="task-input" placeholder="Add a new task...">
+                <button id="add-task">Add</button>
+            </div>
+            <ul id="task-list"></ul>
+        </section>
+
+        <section id="weather-section">
+            <h2> Weather</h2>
+            <div class="weather-box">
+                <input type="text" id="city-input" placeholder="Enter city name...">
+                <button id="get-weather">Get Weather</button>
+                <div id="weather-result">
+                    <p>Enter a city to see the weather.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="video-section">
+            <h2>Daily Motivation</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/fLeJJPxua3E?si=LG8G-_10wNtUsKlZ"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+
+        <section id="media-section">
+            <h2> Daily Quote Image</h2>
+            <img src="images/Vision Board Self Love.jpg" alt="A motivational quote image">
+        </section>
+
+        <aside>
+            <h3> Tip of the Day</h3>
+            <p>Stay focused, stay productive!</p>
+        </aside>
+
+    </main>
+
+    <footer>
+        <p>All Rights Reserved &copy; 2026</p>
+    </footer>
+
+    <div class="fixed-badge">hi!</div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+<!-- font :Doppio One from Google Fonts -->
+<!-- video from YouTube -->
